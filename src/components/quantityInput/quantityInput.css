@@ -5,6 +5,7 @@
 .quantityInput {
   display: flex;
   font-family: monospace;
+  align-items: center;
 }
 .btn-minus {
   color: white;
