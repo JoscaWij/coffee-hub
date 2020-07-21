@@ -31,39 +31,3 @@
 .quantityInput > button > svg {
   fill: #fff;
 }
-
-/*
-* {
-  box-sizing: border-box;
-}
-
-.quantityInput {
-  display: flex;
-  font-family: monospace;
-  align-items: center;
-}
-.btn-minus {
-  color: white;
-  background: #cf9775;
-  font-size: 2rem;
-  border-radius: 100px 0 0 100px;
-  padding: 0 30px;
-  border: none;
-  margin: 20px 0;
-}
-
-.btn-plus {
-  color: white;
-  background: #cf9775;
-  font-size: 2rem;
-  border-radius: 0 100px 100px 0;
-  padding: 0 30px;
-  border: none;
-  margin: 20px 0;
-}
-
-.quantityInput > p {
-  font-size: 2rem;
-  padding: 0 30px;
-}
-*/
