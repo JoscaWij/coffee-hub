@@ -1,0 +1,33 @@
+.quantityInput {
+  display: flex;
+}
+
+.quantityInput > button {
+  color: white;
+  background: #cf9775;
+  padding: 4px 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.quantityInput > button:first-child {
+  border-radius: 100px 0 0 100px;
+  padding-left: 20px;
+}
+
+.quantityInput > button:last-child {
+  border-radius: 0 100px 100px 0;
+  padding-right: 20px;
+}
+
+.quantityInput > p {
+  padding: 0 20px;
+  font-size: 1.1rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.quantityInput > button > svg {
+  fill: #fff;
+}
