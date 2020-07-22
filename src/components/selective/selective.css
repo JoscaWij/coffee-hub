@@ -5,6 +5,7 @@
 
 /* .selective = ul */
 .selective {
+  list-style-type: none;
   background-color: #faf4ee;
   display: flex;
   flex-direction: column;
@@ -18,11 +19,14 @@
   padding: 5px 15px;
 }
 
+.selective > li > :first-child {
+  flex-basis: 20%;
+}
+
 .selective > li > p {
   color: #2d140d;
   flex-grow: 1;
   font-size: 1.2rem;
-  font-family: "Sen", sans-serif;
   padding: 0 30px;
 }
 
