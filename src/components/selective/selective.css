@@ -1,9 +1,9 @@
-/*to dos:
+/* to dos:
 - alle svgs centrieren
 - Text in eine Linie bringen
 */
 
-/*.selective = ul*/
+/* .selective = ul */
 .selective {
   background-color: #faf4ee;
   display: flex;
@@ -21,7 +21,6 @@
 .selective > li > p {
   color: #2d140d;
   flex-grow: 1;
-
   font-size: 1.2rem;
   font-family: "Sen", sans-serif;
   padding: 0 30px;
