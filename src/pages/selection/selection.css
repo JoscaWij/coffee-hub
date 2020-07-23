@@ -1,1 +1,14 @@
+.gridContainer {
+  display: grid;
+  grid-template-rows: 20px 3rem 1fr 3rem;
+}
 
+.topNavigation {
+  grid-row: 2 / 3;
+}
+.coffeeList {
+  grid-row: 3 / 4;
+}
+.bottomNavigation {
+  grid-row: 4 / 5;
+}
