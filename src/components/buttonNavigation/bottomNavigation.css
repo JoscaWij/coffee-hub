@@ -1,7 +1,7 @@
 .bottomNavigation {
   background-color: #fff;
   border-radius: 46px 46px 0 0;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-content: center;
