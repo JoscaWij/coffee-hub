@@ -1,0 +1,10 @@
+.bottomNavigation {
+  background-color: #fff;
+  border-radius: 46px 46px 0 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 1rem;
+  box-shadow: 0 2px 88px #fde9da;
+}
