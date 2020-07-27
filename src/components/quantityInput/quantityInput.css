@@ -31,3 +31,8 @@
 .quantityInput > button > svg {
   fill: #fff;
 }
+
+.quantityInput_btnMinus:disabled,
+.quantityInput_btnPlus:disabled {
+  background-color: rgb(112, 112, 112);
+}
