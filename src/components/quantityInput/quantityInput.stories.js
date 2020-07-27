@@ -15,12 +15,18 @@ export const coffeeSelector = () => {
       if (oldQuantity === 2) {
         btnMinus.disabled = true;
       }
+      if (oldQuantity === 10) {
+        btnPlus.disabled = false;
+      }
       quantityOutput.innerHTML = oldQuantity - 1;
     });
     btnPlus.addEventListener("click", () => {
       const oldQuantity = Number(quantityOutput.innerHTML);
       if (oldQuantity === 1) {
         btnMinus.disabled = false;
+      }
+      if (oldQuantity === 9) {
+        btnPlus.disabled = true;
       }
       quantityOutput.innerHTML = oldQuantity + 1;
     });
