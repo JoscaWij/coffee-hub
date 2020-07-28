@@ -10,7 +10,4 @@ funktion createButton(buttonText) {
     return button;
 }
 
-export const addToCart = () => {
-    const button = crateButton("Add to cart");
-    return button;
-};
+
