@@ -7,13 +7,13 @@ function createButton(buttonText) {
   button.className = "btn";
   const text = document.createTextNode(buttonText);
   button.append(text);
+  button.addEventListener("click", () => {
+    alert("Thanks for shopping");
+  });
   return button;
 }
 
 export const addToCart = () => {
   const button = createButton("Add to cart");
-  button.addEventListener("click", () => {
-    alert("Thanks for shopping");
-  });
   return button;
 };
