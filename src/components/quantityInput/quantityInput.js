@@ -22,6 +22,9 @@ export function createQuantityInput() {
 
   btnMinus.addEventListener("click", () => {
     const oldQuantity = Number(quantityOutput.innerText);
+    if (oldQuantity === 2) {
+      btnMinus.disabled = true;
+    }
     quantityOutput.innerText = oldQuantity - 1;
   });
 
