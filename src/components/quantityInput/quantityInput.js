@@ -8,6 +8,7 @@ export function createQuantityInput() {
   const btnMinus = createButton("-");
   btnMinus.classList.remove = "btn";
   btnMinus.className = "quantityInput_btnMinus";
+  container.append(btnMinus);
 
   return container;
 }
