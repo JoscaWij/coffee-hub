@@ -24,7 +24,7 @@ return "<button class=btn>Hallo Fishys</button>";
 
 > !! useEffect is used to "effect" HTML code
 
-## functions:
+## functions: https://github.com/lmachens/coffee-hub/blob/7e037a49dff5f4f476ad28a44a22d2584654b6cf/src/components/button/button.stories.js
 
 # arrow:
 
