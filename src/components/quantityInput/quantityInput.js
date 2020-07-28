@@ -1,5 +1,6 @@
-const { createButton } = require("../button/button");
-const { default: quantityInputStories } = require("./quantityInput.stories");
+import { createButton } from "../button/button";
+//const { createButton } = require("../button/button");
+//const { default: quantityInputStories } = require("./quantityInput.stories");
 
 export function createQuantityInput() {
   const quantityInput = document.createElement("div");
