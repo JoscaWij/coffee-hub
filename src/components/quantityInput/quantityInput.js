@@ -25,5 +25,10 @@ export function createQuantityInput() {
     quantityOutput.innerText = oldQuantity - 1;
   });
 
+  btnPlus.addEventListener("click", () => {
+    const oldQuantity = Number(quantityOutput.innerText);
+    quantityOutput.innerText = oldQuantity + 1;
+  });
+
   return container;
 }
