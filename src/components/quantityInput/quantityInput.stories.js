@@ -1,9 +1,10 @@
 import "./quantityInput.css";
-import quantityInput from "./quantityInput.html";
-import { useEffect } from "@storybook/client-api";
+// import quantityInput from "./quantityInput.html";
+// import { useEffect } from "@storybook/client-api";
 
 export default { title: "Quantity Selector" };
 
+/*
 export const coffeeSelector = () => {
   useEffect(() => {
     // Select buttons here
@@ -34,3 +35,4 @@ export const coffeeSelector = () => {
 
   return quantityInput;
 };
+*/
