@@ -25,6 +25,9 @@ export function createQuantityInput() {
     if (oldQuantity === 2) {
       btnMinus.disabled = true;
     }
+    if (oldQuantity === 10) {
+      btnPlus.disabled = false;
+    }
     quantityOutput.innerText = oldQuantity - 1;
   });
 
