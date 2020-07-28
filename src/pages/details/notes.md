@@ -1,6 +1,7 @@
-notes from details.stories.js:
+# notes from details.stories.js:
 
-// nice comment
+## first attemts:
+
 // let message = "Hello fishy";
 // alert(message);
 // alert("Hello");
@@ -20,3 +21,19 @@ button.innerHTML = "Fische ahoi";
 });
 return "<button class=btn>Hallo Fishys</button>";
 };
+
+> !! useEffect is used to "effect" HTML code
+
+## functions:
+
+# arrow:
+
+() => {
+
+}
+
+# andere Schreibweise:
+
+function name (){
+
+}
