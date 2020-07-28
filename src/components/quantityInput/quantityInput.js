@@ -20,5 +20,10 @@ export function createQuantityInput() {
   btnPlus.className = "quantityInput_btnPlus";
   container.append(btnPlus);
 
+  btnMinus.addEventListener("click", () => {
+    const oldQuantity = Number(quantityOutput.innerText);
+    quantityOutput.innerText = oldQuantity - 1;
+  });
+
   return container;
 }
