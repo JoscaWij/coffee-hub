@@ -2,10 +2,15 @@ import "./button.css";
 
 export default { title: "Button" };
 
-export const addToCart = () => {
-  const button = document.createElement("button");
-  button.className("btn");
-  button.innerText = "Add to cart";
+funktion createButton(buttonText) {
+    const button = document.createElement('button');
+    button.className ='btn';
+    const text = document.createTextNode(buttonText);
+    button.append(text);
+    return button;
+}
 
-  return button;
+export const addToCart = () => {
+    const button = crateButton("Add to cart");
+    return button;
 };
