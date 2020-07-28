@@ -10,5 +10,10 @@ export function createQuantityInput() {
   btnMinus.className = "quantityInput_btnMinus";
   container.append(btnMinus);
 
+  const btnPlus = createButton("+");
+  btnPlus.classList.remove = "btn";
+  btnPlus.className = "quantityInput_btnPlus";
+  container.append(btnPlus);
+
   return container;
 }
