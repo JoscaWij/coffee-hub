@@ -2,23 +2,23 @@ const { createButton } = require("../button/button");
 const { default: quantityInputStories } = require("./quantityInput.stories");
 
 export function createQuantityInput() {
-  const container = document.createElement("div");
-  container.className = "quantityInput";
+  const quantityInput = document.createElement("div");
+  quantityInput.className = "quantityInput";
 
   const btnMinus = createButton("-");
   btnMinus.classList.remove = "btn";
   btnMinus.className = "quantityInput_btnMinus";
-  container.append(btnMinus);
+  quantityInput.append(btnMinus);
 
   const quantityOutput = document.createElement("p");
   quantityOutput.innerText = 1;
   quantityOutput.className = "quantityOutput";
-  container.append(quantityOutput);
+  quantityInput.append(quantityOutput);
 
   const btnPlus = createButton("+");
   btnPlus.classList.remove = "btn";
   btnPlus.className = "quantityInput_btnPlus";
-  container.append(btnPlus);
+  quantityInput.append(btnPlus);
 
   btnMinus.addEventListener("click", () => {
     const oldQuantity = Number(quantityOutput.innerText);
@@ -42,5 +42,5 @@ export function createQuantityInput() {
     quantityOutput.innerText = oldQuantity + 1;
   });
 
-  return container;
+  return quantityInput;
 }
