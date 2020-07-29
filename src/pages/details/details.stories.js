@@ -17,13 +17,22 @@ export const basic = () => {
     src: macciatoSrc,
   });
   const form = createElement("form");
+  const coffeeName = createElement("h3", {
+    innerText: "Macciato",
+  });
+  const coffeePrice = createElement("div", {
+    innerText: "$2.90",
+  });
   const quantitySelector = createQuantityInput();
+
   const button = createButton("Add to cart");
 
   container.append(header);
   container.append(form);
   header.append(title);
   header.append(macciatoImg);
+  form.append(coffeeName);
+  form.append(coffeePrice);
   form.append(quantitySelector);
   form.append(button);
 
