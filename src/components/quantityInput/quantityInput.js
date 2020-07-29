@@ -6,9 +6,14 @@ export function createQuantityInput() {
     className: "quantityInput",
   });
 
-  const btnMinus = createButton("-");
-  btnMinus.classList.remove = "btn";
-  btnMinus.className = "quantityInput_btnMinus";
+  const btnMinus = createElement("button", {
+    className: "quantityInput_btnMinus",
+    innerText: "-",
+  });
+  // old version
+  // const btnMinus = createButton("-");
+  // btnMinus.classList.remove = "btn";
+  // btnMinus.className = "quantityInput_btnMinus";
 
   const quantityOutput = document.createElement("p");
   quantityOutput.innerText = 1;
