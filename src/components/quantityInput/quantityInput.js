@@ -26,8 +26,13 @@ export function createQuantityInput() {
 
   const btnPlus = createElement("button", {
     className: "quantityInput_btnPlus",
-    innerText: "+",
   });
+
+  const plusImage = createElement("img", {
+    src: plusSrc,
+    alt: "Plus",
+  });
+  btnPlus.append(plusImage);
 
   // const btnPlus = createButton("+");
   // btnPlus.classList.remove = "btn";
