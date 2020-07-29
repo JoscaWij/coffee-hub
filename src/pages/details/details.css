@@ -1,6 +1,7 @@
 .details {
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .details > header {
@@ -25,4 +26,8 @@
 .details > form > label > input {
   display: block;
   padding-top: 3px;
+}
+
+.details > form > .btn {
+  margin: 10px auto;
 }

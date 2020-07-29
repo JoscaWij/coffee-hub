@@ -17,7 +17,6 @@ export const basic = () => {
     src: backLink_imgSrc,
   });
   const title = createElement("h2", {
-    className: "formTitel",
     innerHTML: "Macciato",
   });
   const macciatoImg = createElement("img", {
@@ -25,8 +24,7 @@ export const basic = () => {
   });
   const form = createElement("form");
   const coffeeName = createElement("div", {
-    className: "coffeeName",
-    innerText: "Macciato",
+    innerHTML: "<b>Macciato</b>",
   });
   const coffeePrice = createElement("div", {
     innerText: "$2.90",
