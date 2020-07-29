@@ -15,13 +15,18 @@ export function createQuantityInput() {
   // btnMinus.classList.remove = "btn";
   // btnMinus.className = "quantityInput_btnMinus";
 
+  const btnPlus = createElement("button", {
+    className: "quantityInput_btnPlus",
+    innerText: "+",
+  });
+
+  // const btnPlus = createButton("+");
+  // btnPlus.classList.remove = "btn";
+  // btnPlus.className = "quantityInput_btnPlus";
+
   const quantityOutput = document.createElement("p");
   quantityOutput.innerText = 1;
   quantityOutput.className = "quantityOutput";
-
-  const btnPlus = createButton("+");
-  btnPlus.classList.remove = "btn";
-  btnPlus.className = "quantityInput_btnPlus";
 
   // add buttons and output to quantityInput
   quantityInput.append(btnMinus);
