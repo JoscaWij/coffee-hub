@@ -12,9 +12,17 @@
   flex-basis: 100%;
   padding: 1rem 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.details > form > * {
+.details > form > label {
+  font-weight: bolder;
+  flex-basis: 100%;
   padding: 5px 0;
+}
+
+.details > form > label > input {
+  display: block;
+  padding-top: 3px;
 }

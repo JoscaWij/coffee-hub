@@ -17,13 +17,14 @@ export const basic = () => {
     src: backLink_imgSrc,
   });
   const title = createElement("h2", {
+    className: "formTitel",
     innerHTML: "Macciato",
   });
   const macciatoImg = createElement("img", {
     src: macciatoSrc,
   });
   const form = createElement("form");
-  const coffeeName = createElement("label", {
+  const coffeeName = createElement("div", {
     className: "coffeeName",
     innerText: "Macciato",
   });
@@ -52,9 +53,9 @@ export const basic = () => {
   header.append(title);
   header.append(macciatoImg);
   form.append(coffeeName);
+  form.append(quantitySelector);
   form.append(coffeeSize);
   form.append(coffeeSugar);
-  form.append(quantitySelector);
   form.append(button);
 
   return container;
