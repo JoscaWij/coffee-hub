@@ -10,9 +10,16 @@ export function createQuantityInput() {
 
   const btnMinus = createElement("button", {
     className: "quantityInput_btnMinus",
-    innerText: "-",
   });
-  // old version
+
+  const minusImage = createElement("img", {
+    src: minusSrc,
+    alt: "Minus",
+  });
+  btnMinus.append(minusImage);
+
+  // old version without images
+
   // const btnMinus = createButton("-");
   // btnMinus.classList.remove = "btn";
   // btnMinus.className = "quantityInput_btnMinus";
