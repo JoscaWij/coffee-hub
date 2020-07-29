@@ -9,18 +9,21 @@ export function createQuantityInput() {
   const btnMinus = createButton("-");
   btnMinus.classList.remove = "btn";
   btnMinus.className = "quantityInput_btnMinus";
-  quantityInput.append(btnMinus);
 
   const quantityOutput = document.createElement("p");
   quantityOutput.innerText = 1;
   quantityOutput.className = "quantityOutput";
-  quantityInput.append(quantityOutput);
 
   const btnPlus = createButton("+");
   btnPlus.classList.remove = "btn";
   btnPlus.className = "quantityInput_btnPlus";
+
+  // add buttons and output to quantityInput
+  quantityInput.append(btnMinus);
+  quantityInput.append(quantityOutput);
   quantityInput.append(btnPlus);
 
+  // add eventListeners
   btnMinus.addEventListener("click", () => {
     const oldQuantity = Number(quantityOutput.innerText);
     if (oldQuantity === 2) {
