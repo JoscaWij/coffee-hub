@@ -1,0 +1,33 @@
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.details > header {
+  flex-basis: 100%;
+  background-color: brown;
+}
+
+.details > form {
+  flex-basis: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.details > form > label {
+  font-weight: bolder;
+  flex-basis: 100%;
+  padding: 5px 0;
+}
+
+.details > form > label > input {
+  display: block;
+  padding-top: 3px;
+}
+
+.details > form > .btn {
+  margin: 10px auto;
+}
