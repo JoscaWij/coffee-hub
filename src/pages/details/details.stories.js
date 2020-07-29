@@ -9,7 +9,9 @@ import backLink_imgSrc from "../../assets/back.svg";
 export default { title: "Pages/Details" };
 
 export const basic = () => {
-  const container = createElement("div");
+  const container = createElement("div", {
+    className: "details",
+  });
   const header = createElement("header");
   const backLink_img = createElement("img", {
     src: backLink_imgSrc,
