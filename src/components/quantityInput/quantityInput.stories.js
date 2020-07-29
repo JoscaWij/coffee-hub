@@ -7,7 +7,7 @@ import { createQuantityInput } from "./quantityInput";
 export default { title: "Quantity Selector" };
 
 export const coffeeSelector = () => {
-  const quantitySelector = createQuantitySelector();
+  const quantitySelector = createQuantityInput();
   return quantitySelector;
 };
 
