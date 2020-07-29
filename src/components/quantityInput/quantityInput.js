@@ -1,10 +1,10 @@
 import { createButton } from "../button/button";
-//const { createButton } = require("../button/button");
-//const { default: quantityInputStories } = require("./quantityInput.stories");
+import { createElement } from "../../utils";
 
 export function createQuantityInput() {
-  const quantityInput = document.createElement("div");
-  quantityInput.className = "quantityInput";
+  const quantityInput = createElement("div", {
+    className: "quantityInput",
+  });
 
   const btnMinus = createButton("-");
   btnMinus.classList.remove = "btn";
