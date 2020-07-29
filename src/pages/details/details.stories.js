@@ -24,6 +24,11 @@ export const basic = () => {
     innerText: "$2.90",
   });
   const quantitySelector = createQuantityInput();
+  const coffeeSize = createElement("label", {
+    innerText: "Size",
+  });
+  const coffeeSize_selection = createElement("input");
+  coffeeSize.append(coffeeSize_selection);
 
   const button = createButton("Add to cart");
 
@@ -33,6 +38,7 @@ export const basic = () => {
   header.append(macciatoImg);
   form.append(coffeeName);
   form.append(coffeePrice);
+  form.append(coffeeSize);
   form.append(quantitySelector);
   form.append(button);
 
