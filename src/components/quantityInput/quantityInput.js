@@ -1,5 +1,7 @@
 //import { createButton } from "../button/button";
 import { createElement } from "../../utils";
+import minusSrc from "../../assets/minus.svg";
+import plusSrc from "../../assets/plus.svg";
 
 export function createQuantityInput() {
   const quantityInput = createElement("div", {
