@@ -1,26 +1,15 @@
-import { useEffect } from "@storybook/client-api";
+// import { useEffect } from "@storybook/client-api";
+import { createButton } from "../../components/button/button";
+import { createQuantityInput } from "../../components/quantityInput/quantityInput";
 
-export default {
-  title: "Pages/Details",
-};
+export default { title: "Pages/Details" };
 
 export const basic = () => {
-  useEffect(() => {
-    // alert("Button!!");
-    const button = document.querySelector(".btn");
-    button.addEventListener("click", () => {
-      //alert(button.innerHTML);
-      button.innerHTML = "Fische ahoi";
-    });
-  });
-  return "<button class=btn>Hallo Fishys</button>";
+  const main = document.createElement("main");
+  const quantitySelector = createQuantityInput();
+  main.append(quantitySelector);
+  const button = createButton("Add to cart");
+  main.append(button);
+
+  return main;
 };
-
-// nice comment
-// let message = "Hello fishy";
-// alert(message);
-// alert("Hello");
-
-// const students = 15;
-// const text = `Hello $(students) Fische`;
-// alert(text);
