@@ -23,12 +23,14 @@ export const basic = () => {
     src: macciatoSrc,
   });
   const form = createElement("form");
-  const coffeeName = createElement("h3", {
+  const coffeeName = createElement("label", {
+    className: "coffeeName",
     innerText: "Macciato",
   });
   const coffeePrice = createElement("div", {
     innerText: "$2.90",
   });
+  coffeeName.append(coffeePrice);
   const quantitySelector = createQuantityInput();
   const coffeeSize = createElement("label", {
     innerText: "Size",
@@ -50,7 +52,6 @@ export const basic = () => {
   header.append(title);
   header.append(macciatoImg);
   form.append(coffeeName);
-  form.append(coffeePrice);
   form.append(coffeeSize);
   form.append(coffeeSugar);
   form.append(quantitySelector);
