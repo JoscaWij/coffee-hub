@@ -21,7 +21,8 @@ export function createSelection() {
   ];
 
   coffees.forEach((coffee) => {
-    const listItem = createElement("li", {
+    const listItem = createElement("li");
+    const coffeeTitel = createElement("span", {
       innerText: coffee.innerText,
     });
     const img = createElement("img", {
@@ -33,9 +34,10 @@ export function createSelection() {
       src: backLink_imgSrc,
     });
 
+    listItem.prepend(img);
+    listItem.append(coffeeTitel);
     backLink.append(backLink_img);
     listItem.append(backLink);
-    listItem.prepend(img);
     selection.append(listItem);
   });
 
