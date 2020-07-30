@@ -5,6 +5,7 @@ import cappuccionoSrc from "../../assets/Cappuccino.svg";
 import macciatoSrc from "../../assets/macciato.svg";
 import mochaSrc from "../../assets/Mocha.svg";
 import latteSrc from "../../assets/latte.svg";
+import backLink_imgSrc from "../../assets/back.svg";
 
 export function createSelection() {
   const selection = createElement("ul", {
@@ -26,6 +27,14 @@ export function createSelection() {
     const img = createElement("img", {
       src: coffee.src,
     });
+    const backLink = createElement("a");
+
+    const backLink_img = createElement("img", {
+      src: backLink_imgSrc,
+    });
+
+    backLink.append(backLink_img);
+    listItem.append(backLink);
     listItem.prepend(img);
     selection.append(listItem);
   });
