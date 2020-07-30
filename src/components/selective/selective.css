@@ -24,7 +24,7 @@
   flex-basis: 20%;
 }
 
-.selective > li > p {
+.selective > li > span {
   color: #2d140d;
   flex-grow: 1;
   font-size: 1.2rem;
